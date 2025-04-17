@@ -13,6 +13,11 @@ print(type(my_int_to_str_variable))
 my_bool_variable = True
 print(my_bool_variable)
 
+# Constantes
+
+CONST_BIRTH_YEAR = 1988
+#No existen las constantes como tal, se declaran en mayúsculas para indicar que es una constante
+
 # Concatenación de variables en un print
 print(my_string_variable, my_int_to_str_variable, my_bool_variable)
 print("Este es el valor de:", my_bool_variable)
