@@ -18,3 +18,28 @@ else:
     print("Es menor o igual que 10 o mayor o igual que 20")
 
 print("La ejecución continúa")
+
+my_string = ""
+
+if not my_string:
+    print("Mi cadena de texto es vacía")
+    
+if my_string == "Mi cadena de textooooooo":
+    print("Estas cadenas de texto coinciden")
+    
+    
+#Desde Python 3.10 se introdujo una nueva estructura muy parecida al switch llamada match / case, que funciona como un switch.
+
+def saludar(dia):
+    match dia:
+        case "lunes":
+            print("¡Ánimo, que empieza la semana!")
+        case "viernes":
+            print("¡Por fin viernes!")
+        case "sábado" | "domingo":
+            print("¡Es fin de semana!")
+        case _:
+            print("Día normal")
+            
+saludar("viernes")
+# Resultado: ¡Por fin viernes!
