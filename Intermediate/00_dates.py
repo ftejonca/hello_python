@@ -3,6 +3,7 @@
 from datetime import datetime
 from datetime import time
 from datetime import date
+from datetime import timedelta
 
 now = datetime.now()
 
@@ -39,3 +40,17 @@ print(current_date.year)
 print(current_date.month)
 print(current_date.day)
 
+current_date = date(current_date.year, current_date.month + 1, current_date.day)
+
+print(type(current_date))
+print(current_date.month)
+
+diff = year_2025 - now
+print(diff)
+diff = year_2025.date() - current_date
+print(diff)
+
+init_time_delta = timedelta(200,100, 100, weeks = 10)
+end_time_delta = timedelta(300, 100, 100, weeks = 13)
+print(end_time_delta - init_time_delta)
+print(end_time_delta + init_time_delta)
