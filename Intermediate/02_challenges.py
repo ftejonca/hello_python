@@ -92,4 +92,46 @@ def fibonacci():
         next = fib
         
         
-fibonacci()
+#fibonacci()
+
+"""
+¿ES UN NÚMERO PRIMO?
+Escribe un programa que se encargue de comprobar si un número es o no primo.
+Hecho esto, imprime los números primos entre 1 y 100.
+"""
+
+def is_prime():
+
+    for number in range(1, 101):
+
+        if number >= 2:
+
+            is_divisible = False
+
+            for index in range(2, number):
+                if number % index == 0:
+                    is_divisible = True
+                    break
+
+            if not is_divisible:
+                print(number)
+
+
+#is_prime()
+
+"""
+INVIRTIENDO CADENAS
+Crea un programa que invierta el orden de una cadena de texto
+sin usar funciones propias del lenguaje que lo hagan de forma automática.
+- Si le pasamos "Hola mundo" nos retornaría "odnum aloH"
+"""
+
+def reverse(text):
+    text_len = len(text)
+    reversed_text = ""
+    for index in range(0, text_len):
+        reversed_text += text[text_len - index - 1]
+    return reversed_text
+
+
+#print(reverse("Ballerina capuccina mimimi"))
