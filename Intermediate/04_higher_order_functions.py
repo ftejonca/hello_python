@@ -66,3 +66,12 @@ def sum_two_values(first_value, second_value):
 
 
 print(reduce(sum_two_values, numbers))
+
+
+es_par = lambda number: "Par" if number % 2 ==0 else "Impar"
+print(es_par(100))
+
+
+numeros = [1, 2, 3, 4]
+dobles = list(map(lambda x: x * 2, numeros))
+print(dobles)
