@@ -1,0 +1,11 @@
+{
+    "nombre": "Fernando",
+    "apellido": "Tejon",
+    "edad": 35,
+    "lenguajes": [
+        "Python",
+        "JavaScript",
+        "C#"
+    ],
+    "videojuego": "expedition 33"
+}
