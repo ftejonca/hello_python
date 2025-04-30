@@ -49,3 +49,35 @@ print(re.sub("Expresiones Regulares", "RegEx", my_string))
 
 # patrones
 
+pattern = r"[lL]ección"
+print(re.findall(pattern, my_string))
+
+pattern = r"[lL]ección|Expresiones"
+print(re.findall(pattern, my_string))
+
+pattern = r"[a-z]"
+print(re.findall(pattern, my_string))
+
+pattern = r"[0-9]"
+print(re.findall(pattern, my_string))
+print(re.search(pattern, my_string))
+
+pattern = r"\d"
+print(re.findall(pattern, my_string))
+
+pattern = r"\D"
+print(re.findall(pattern, my_string))
+
+pattern = r"[l].*"
+print(re.findall(pattern, my_string))
+
+# validación de email con expresiones regulares
+
+email = "ftejoncadev@gmail.com"
+pattern = r"^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9]+\.[a-zA-Z0-9-.]+$"
+print(re.match(pattern, email))
+print(re.search(pattern, email))
+print(re.findall(pattern, email))
+
+email = "ftejoncadev@gmail"
+print(re.findall(pattern, email))
